@@ -62,13 +62,13 @@
                                     <constraint firstAttribute="trailing" secondItem="Rs7-fH-bC6" secondAttribute="trailing" id="nBC-4j-sCy"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Sign in with Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYH-Fk-53V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Sign In with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYH-Fk-53V">
                                 <rect key="frame" x="58" y="230" width="258" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="258" id="Ouq-mW-iOj"/>
                                     <constraint firstAttribute="height" constant="58" id="bCF-c5-BPN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.50864190924657537" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -82,6 +82,9 @@
                                 <state key="normal" title="Login with Facebook">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6F-Nf-vb8"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-BA-WRf">
                                 <rect key="frame" x="46" y="344" width="283" height="203"/>
@@ -129,6 +132,7 @@
                             <constraint firstItem="Iry-vC-EwT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OH9-2x-sgZ"/>
                             <constraint firstAttribute="trailing" secondItem="F82-Wv-Jua" secondAttribute="trailing" id="QO4-it-eAi"/>
                             <constraint firstItem="bbV-W1-VMz" firstAttribute="top" secondItem="Iry-vC-EwT" secondAttribute="bottom" constant="81" id="SGq-By-Bfe"/>
+                            <constraint firstItem="WYH-Fk-53V" firstAttribute="top" secondItem="bbV-W1-VMz" secondAttribute="bottom" constant="24" id="SJp-RF-t8q"/>
                             <constraint firstItem="Iry-vC-EwT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WFn-ud-ctZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WYH-Fk-53V" secondAttribute="trailing" constant="43" id="YAu-Ze-sq3"/>
                             <constraint firstItem="Hhy-BA-WRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YtD-lU-4eX"/>
