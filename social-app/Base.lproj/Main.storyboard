@@ -99,7 +99,7 @@
                                         <rect key="frame" x="0.0" y="79" width="283" height="24"/>
                                         <color key="textColor" red="0.6509079337" green="0.6510220766" blue="0.6509007215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhH-Zw-gCT">
                                         <rect key="frame" x="0.0" y="158" width="283" height="45"/>
@@ -111,6 +111,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFg-Bi-o6e"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -145,6 +148,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F82-Wv-Jua" secondAttribute="bottom" id="wfs-Sw-pUz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="NkC-zL-uqh" id="KCH-4J-tSN"/>
+                        <outlet property="passwordField" destination="Ygs-0y-Dwn" id="SXd-ot-YFq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
